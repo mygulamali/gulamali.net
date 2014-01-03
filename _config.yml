@@ -1,0 +1,14 @@
+# permalink pattern
+permalink: /:categories/:year-:month-:day/:title.html
+
+# display settings
+title: Murtaza Gulamali
+tagline: software engineer
+author:
+  name: MYG
+
+# global settings
+encoding: UTF-8
+exclude: [Gemfile, Gemfile.lock, LICENSE, README.md]
+safe: true
+timezone: Europe/London
