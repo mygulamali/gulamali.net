@@ -15,6 +15,20 @@ end
 
 task :default => :build
 
+desc "Initialise the vendor stylesheets"
+task :init do
+  directory = 'assets/_sass/vendor'
+
+  if not Dir.exists?(directory)
+    Dir.mkdir directory
+  end
+
+  Dir.chdir directory  do
+    sh 'bundle exec bourbon install'
+    sh 'bundle exec neat install'
+  end
+end
+
 desc "Build site using SASS and Jekyll"
 task :build do
   sh sass '--update'
