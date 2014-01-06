@@ -2,25 +2,43 @@
 # https://github.com/appden/appden.github.com/blob/master/Rakefile
 
 def jekyll(options='')
-  sh 'rm -rf _site'
-  sh "bundle exec jekyll #{options}"
+  "rm -rf _site && bundle exec jekyll #{options}"
+end
+
+def sass(options='')
+  "bundle exec scss --sass #{options} assets/_sass/style.sass:assets/css/style.css"
 end
 
 def rsync(domain)
-  sh "rsync -rtvz --delete _site/ mygulamali@gulamali.net:~/#{domain}/"
+  "rsync -rtvz --delete _site/ mygulamali@gulamali.net:~/#{domain}/"
 end
 
-desc "Build site using Jekyll"
+task :default => :build
+
+desc "Build site using SASS and Jekyll"
 task :build do
-  jekyll 'build'
+  sh sass '--update'
+  sh jekyll 'build'
 end
 
 desc "Serve on localhost:4000 and watch"
 task :serve do
-  jekyll 'serve --watch'
+  pids = [
+    spawn(sass '--watch'),
+    spawn(jekyll 'serve --watch'),
+  ]
+
+  trap "INT" do
+    Process.kill "INT", *pids
+    exit 1
+  end
+
+  loop do
+    sleep 1
+  end
 end
 
 desc "Deploy to live website"
 task :deploy => :build do
-  rsync 'gulamali.net'
+  sh rsync 'gulamali.net'
 end
