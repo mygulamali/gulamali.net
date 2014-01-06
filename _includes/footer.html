@@ -3,5 +3,5 @@
   <a title="Jekyll" href="http://jekyllrb.com/">Jekyll</a>. Fork this site on
   <a title="GitHub" href="https://github.com/mygulamali/gulamali.net">GitHub</a>.<br>
   &copy; {{ site.time | date:'%Y' }}, Murtaza Gulamali. All rights reserved. Last modified:
-  <time datetime="{{ site.time | date:'%Y-%m-%d' }}">{{ site.time | date:'Day %j of %Y' }}</time>.
+  <time datetime="{{ site.time | date_to_xmlschema }}">{{ site.time | date:'%-d %b %Y' }}</time>.
 </footer>
