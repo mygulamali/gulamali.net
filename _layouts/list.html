@@ -5,7 +5,7 @@
 <!--[if IE 9 ]><html class="ie9 no-js"> <![endif]-->
 <!--[if (gt IE 9)|!(IE)]><!--> <html class="no-js"> <!--<![endif]-->
   {% include head.html %}
-  <body>
+  <body id="{{ page.layout }}">
     {% include header.html %}
 
     <hr />
@@ -31,7 +31,7 @@
         {% endif %}
         <li>
           <div class="time">
-            <time datetime="{{ post.date | date_to_xmlschema }}">
+            <time datetime="{{ post.date | date_to_xmlschema }}" title="{{ post.date | date_to_string }}">
               {{ post.date | date:'%-d %b' }}
             </time>
           </div>

@@ -5,16 +5,18 @@
 <!--[if IE 9 ]><html class="ie9 no-js"> <![endif]-->
 <!--[if (gt IE 9)|!(IE)]><!--> <html class="no-js"> <!--<![endif]-->
   {% include head.html %}
-  <body>
+  <body id="{{ page.layout }}">
     {% include header.html %}
 
     <hr />
 
     <main role="main">
+      <div class="time">
+        <time datetime="{{ page.date | date_to_xmlschema }}" title="{{ page.date | date_to_string }}">
+          {{ page.date | date:'%-d %B %Y' }}
+        </time>
+      </div>
       <h2>{{ page.title }}</h2>
-      <time datetime="{{ page.date | date:'%Y-%m-%d' }}" title="{{ page.date | date_to_string }}">
-        {{ page.date | date:'%-d %B %Y' }}
-      </time>
 
       <article>
         {{ content }}
