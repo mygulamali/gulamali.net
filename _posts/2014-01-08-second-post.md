@@ -5,7 +5,7 @@ category: blog
 tags: [Jekyll, Website]
 ---
 It's been way too long since my last post, so let's try this blogging malarky
-again...
+again&hellip;
 
 Aside from the (new?) [Web 1.0][1] based theme, the main changes to this site
 since my last post include hosting on my [Dreamhost][2] account instead of
