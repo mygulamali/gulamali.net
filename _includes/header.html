@@ -1,3 +1,20 @@
 <header>
-  <h1><a href="/">{{ site.title }}</a></h1>
-</header>
+  <div class="column">
+    <h1><a href="/">{{ site.title }}</a></h1>
+  </div>
+  <div class="column">
+    <nav>
+      <ul class="nav">
+        {% for category in site.categories reversed %}
+        {% assign category_name = category[0] %}
+        <li>
+          {% if category_name != page.category %}<a href="/{{ category_name | downcase }}/">{% endif %}
+            {{ category_name | capitalize }}
+          {% if category_name != page.category %}</a>{% endif %}
+        </li>
+        {% endfor %}
+        <li><a href="https://github.com/mygulamali">GitHub</a></li>
+      </ul>
+     </nav>
+   </div>
+ </header>
