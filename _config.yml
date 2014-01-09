@@ -11,3 +11,4 @@ author:
 encoding: UTF-8
 exclude: [Gemfile, Gemfile.lock, LICENSE, Rakefile, README.md]
 timezone: Europe/London
+markdown: redcarpet
