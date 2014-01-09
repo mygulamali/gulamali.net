@@ -10,5 +10,4 @@ author:
 # global settings
 encoding: UTF-8
 exclude: [Gemfile, Gemfile.lock, LICENSE, Rakefile, README.md]
-safe: true
 timezone: Europe/London
