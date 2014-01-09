@@ -3,5 +3,5 @@
   <a title="Dreamhost" href="http://www.dreamhost.com/r.cgi?1105583">Dreamhost</a> and
   <a title="Jekyll" href="http://jekyllrb.com/">Jekyll</a>.<br>
   &copy; {{ site.time | date:'%Y' }}, Murtaza Gulamali. All rights reserved. Last modified:
-  <time datetime="{{ site.time | date_to_xmlschema }}">{{ site.time | date:'%-d %b %Y' }}</time>.
+  {{ site.time | date_to_time_tag:'%-d %b %Y' }}.
 </footer>

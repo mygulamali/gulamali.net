@@ -11,11 +11,7 @@
     <hr />
 
     <main role="main">
-      <div class="time">
-        <time datetime="{{ page.date | date_to_xmlschema }}" title="{{ page.date | date_to_string }}">
-          {{ page.date | date:'%-d %B %Y' }}
-        </time>
-      </div>
+      <div class="time">{{ page.date | date_to_time_tag:'%-d %B %Y' }}</div>
       <h2>{{ page.title }}</h2>
 
       <article>
