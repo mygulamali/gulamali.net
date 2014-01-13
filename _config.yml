@@ -12,15 +12,17 @@ encoding: UTF-8
 exclude: [Gemfile, Gemfile.lock, LICENSE, Rakefile, README.md]
 timezone: Europe/London
 markdown: redcarpet
+redcarpet:
+  extensions: ["smart", "no_intra_emphasis"]
 
 # jekyll-picture-tag settings
 picture:
-  source: "assets/img/_original"
-  output: "assets/img/"
-  markup: "picturefill"
+  source: assets/_img
+  output: assets/img
+  markup: picturefill
   presets:
     default:
-      ppi: [1, 1.5]
+      ppi: [1, 1.5, 2]
       source_small:
         media: "(max-width: 20em)"
         width: "320"
