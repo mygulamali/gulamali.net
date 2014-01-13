@@ -17,9 +17,6 @@
       {% if page.feature %}
       <figure>
         {% picture {{ page.feature.image }} alt="{{ page.feature.caption }}"%}
-        {% if page.feature.caption %}
-        <figcaption>{{ page.feature.caption }}</figcaption>
-        {% endif %}
       </figure>
       {% endif %}
 
