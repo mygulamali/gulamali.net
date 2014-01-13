@@ -14,6 +14,15 @@
       <div class="time">{{ page.date | date_to_time_tag:'%-d %B %Y' }}</div>
       <h2>{{ page.title }}</h2>
 
+      {% if page.feature %}
+      <figure>
+        {% picture {{ page.feature.image }} alt="{{ page.feature.caption }}"%}
+        {% if page.feature.caption %}
+        <figcaption>{{ page.feature.caption }}</figcaption>
+        {% endif %}
+      </figure>
+      {% endif %}
+
       <article>
         {{ content }}
       </article>
