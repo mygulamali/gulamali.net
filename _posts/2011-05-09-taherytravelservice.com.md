@@ -3,9 +3,8 @@ layout: post
 title: Tahery Travel Service
 category: portfolio
 tags: [Commercial, Websites, Wordpress]
-image:
-  url: /assets/img/feature/taherytravelservice.com-512x384.jpg
-  thumbnail: /assets/img/feature/taherytravelservice.com-200x200.jpg
+feature:
+  image: taherytravelservice.com.jpg
   caption: taherytravelservice.com
 ---
 [Tahery Travel Service](http://www.taherytravelservice.com/) offers visa and

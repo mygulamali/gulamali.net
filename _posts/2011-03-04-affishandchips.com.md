@@ -3,9 +3,8 @@ layout: post
 title: AF Fish And Chips
 category: portfolio
 tags: [Commercial, Websites]
-image:
-  url: /assets/img/feature/affishandchips.com-512x384.jpg
-  thumbnail: /assets/img/feature/affishandchips.com-200x200.jpg
+feature:
+  image: affishandchips.com.jpg
   caption: affishandchips.com
 ---
 [AF Fish and Chips](http://www.affishandchips.com/) provide *Halaal* fish to

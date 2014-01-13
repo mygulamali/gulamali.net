@@ -3,9 +3,8 @@ layout: post
 title: Mumineen Calendar
 category: portfolio
 tags: [HTML5, JavaScript, Ruby on Rails, Web Applications]
-image:
-  url: /assets/img/feature/mumineencalendar.com-512x384.jpg
-  thumbnail: /assets/img/feature/mumineencalendar.com-200x200.jpg
+feature:
+  image: mumineencalendar.com.jpg
   caption: mumineencalendar.com
 ---
 This is a bit of a personal project. As a [Dawoodi Bohra
