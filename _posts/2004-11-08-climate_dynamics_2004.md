@@ -3,6 +3,9 @@ title: Climate Dynamics 2004
 layout: post
 category: portfolio
 tags: [Academic, Climate, Computing, Grid, Numerical, Publications]
+feature:
+  image: Thermohaline-circulation-intensity.png
+  caption: Intensity of the thermohaline circulation currents.
 ---
 ### Bistability of the thermohaline circulation identified through comprehensive 2-parameter sweeps of an efficient climate model
 *R. Marsh, A. Yool, T. M. Lenton, M. Y. Gulamali, N. R. Edwards,

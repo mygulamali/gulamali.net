@@ -3,6 +3,9 @@ title: PhD Thesis
 layout: post
 category: portfolio
 tags: [Academic, Numerical, Physics, Publications, Space]
+feature:
+  image: cir7-92.png
+  caption: A corotating interaction region observed by the Ulysses spacecraft in 1992.
 ---
 ### Spacecraft observations of magnetohydrodynamic turbulence in corotating interaction regions
 *Murtaza Y. Gulamali*
