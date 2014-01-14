@@ -20,6 +20,9 @@ bundle exec rake init
 
 Then visit `http://localhost:4000` to see the site in action.
 
+NB. ImageMagick should be installed on your localhost.  On OS X you can
+`brew install imagemagick`.
+
 ## Deploy to Dreamhost account
 
 `bundle exec rake deploy`
