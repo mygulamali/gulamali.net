@@ -28,9 +28,8 @@ workflow ([Emacs](http://www.gnu.org/software/emacs/),
 
 Anyhoo, so that should explain the sparseness of this website for the moment.
 I intend to populate it with my old content and give it a lick of paint over
-the next few weeks.  In the meantime, my [old Wordpress based
-website](http://old.gulamali.net/) is still temporarily available [over
-here](http://old.gulamali.net/).
+the next few weeks.  In the meantime, my *old Wordpress based website* is
+still temporarily available *over here*.
 
 And finally, the obligatory *Hello World*:
 
@@ -43,3 +42,6 @@ int main(int argc, char* argv[]) {
 {% endhighlight %}
 
 See what I did there? Woo!
+
+**Update (4 February 2014):** My old website has now been obliterated.  All
+the old things can now be viewed here instead.  Thank you!
