@@ -1,0 +1,28 @@
+header
+  margin:
+    top: 3em
+    bottom: 3em
+  text-align: center
+
+  h1
+    font:
+      family: $serif
+      weight: 800
+    margin-bottom: .3em
+
+    @include media($large-screen)
+      font-size: 3em
+      margin-bottom: .4em
+
+  h2
+    color: lighten($base-font-color, 20)
+    font:
+      size: 1.3em
+      weight: 300
+    line-height: 1.4em
+    margin: 0 auto 1em
+
+    @include media($large-screen)
+      font-size: 1.7em
+      line-height: 1.35em
+      margin: 0 auto 1em
