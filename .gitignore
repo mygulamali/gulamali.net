@@ -21,6 +21,5 @@
 /tmp
 
 # Ignore vendor style files
-/source/stylesheets/base
 /source/stylesheets/bourbon
 /source/stylesheets/neat

@@ -14,13 +14,6 @@ bundle install
 bundle exec rake init
 ```
 
-Then uncomment line 10 of `source/stylesheets/base/_base.scss`.  And change line
-1 of `source/styleseets/base/_grid_settings.scss` to:
-
-```sass
-@import "../neat/neat-helpers";
-```
-
 ## Serve on your localhost
 
 `bundle exec middleman server`
