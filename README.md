@@ -14,14 +14,18 @@ bundle install
 bundle exec rake init
 ```
 
-## Serve and watch on your localhost
+Then uncomment line 10 of `source/stylesheets/base/_base.scss`.  And change line
+1 of `source/styleseets/base/_grid_settings.scss` to:
 
-`bundle exec rake serve`
+```sass
+@import "../neat/neat-helpers";
+```
 
-Then visit `http://localhost:4000` to see the site in action.
+## Serve on your localhost
 
-NB. ImageMagick should be installed on your localhost.  On OS X you can
-`brew install imagemagick`.
+`bundle exec middleman server`
+
+Then visit `http://localhost:4567` to see the site in action.
 
 ## Deploy to Dreamhost account
 
