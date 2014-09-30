@@ -1,0 +1,8 @@
+<% time = File.mtime(Dir.glob("source/#{request.path}*")[0]) %>
+<footer>
+  <div class="container">
+    &copy; <%= time.strftime("%Y") %>, Murtaza Gulamali. Some rights reserved.<br>
+    Made with <strong>&lt;3</strong> using <a title="Dreamhost" href="http://www.dreamhost.com/r.cgi?1105583">Dreamhost</a> and <a title="Middleman" href="http://middlemanapp.com/">Middleman</a>.
+    Last modified: <time datetime="<%= time.utc.iso8601 %>"><%= time.strftime("Day %j of %YAD") %></time>.
+  </div>
+</footer>
