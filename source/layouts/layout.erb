@@ -7,7 +7,7 @@
     <title><%= "#{current_page.data.title} < " if current_page.data.title %>Murtaza Gulamali</title>
     <meta name="description" content="Is my website, init!">
     <meta name="author" content="Murtaza Gulamali">
-    
+
     <link rel="canonical" href="http://gulamali.net">
     <link rel="shortcut icon" href="favicon.gif">
 
@@ -19,8 +19,13 @@
   </head>
 
   <body class="<%= page_classes %>">
-    <%= yield %>
-  </body>
+    <%= partial "header" %>
 
-  <%= javascript_include_tag "all" %>
+    <main role="main">
+      <%= yield %>
+    </main>
+
+    <%= partial "footer" %>
+    <%= javascript_include_tag "all" %>
+  </body>
 </html>
