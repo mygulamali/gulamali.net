@@ -1,55 +1,27 @@
-# Scraped together with a little love from
-# https://github.com/appden/appden.github.com/blob/master/Rakefile
-
-def jekyll(options='')
-  "rm -rf _site && bundle exec jekyll #{options}"
-end
-
-def sass(options='')
-  "bundle exec scss --sass #{options} assets/_sass/style.sass:assets/css/style.css"
+def build(options='')
+  "rm -rf build && bundle exec middleman build #{options}"
 end
 
 def rsync(domain)
-  "rsync -rtvz --delete _site/ mygulamali@gulamali.net:~/#{domain}/"
+  "rsync -rtvz --delete build/ mygulamali@gulamali.net:~/#{domain}/"
 end
 
 task :default => :build
 
 desc "Initialise the vendor stylesheets"
 task :init do
-  directory = 'assets/_sass/vendor'
-
-  if not Dir.exists?(directory)
-    Dir.mkdir directory
-  end
+  directory = 'source/stylesheets'
 
   Dir.chdir directory  do
     sh 'bundle exec bourbon install'
     sh 'bundle exec neat install'
+    sh 'bundle exec bitters install'
   end
 end
 
-desc "Build site using SASS and Jekyll"
+desc "Build site using Middleman"
 task :build do
-  sh sass '--update'
-  sh jekyll 'build'
-end
-
-desc "Serve on localhost:4000 and watch"
-task :serve do
-  pids = [
-    spawn(sass '--watch'),
-    spawn(jekyll 'serve --watch'),
-  ]
-
-  trap "INT" do
-    Process.kill "INT", *pids
-    exit 1
-  end
-
-  loop do
-    sleep 1
-  end
+  sh build '--clean'
 end
 
 desc "Deploy to live website"

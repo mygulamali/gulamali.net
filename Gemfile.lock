@@ -103,6 +103,7 @@ GEM
       rack
     rack-test (0.6.2)
       rack (>= 1.0)
+    rake (10.3.2)
     rb-fsevent (0.9.4)
     rb-inotify (0.9.5)
       ffi (>= 0.5.0)
@@ -138,5 +139,6 @@ DEPENDENCIES
   middleman (~> 3.3.6)
   middleman-livereload (~> 3.1.0)
   neat
+  rake
   tzinfo-data
   wdm (~> 0.1.0)
