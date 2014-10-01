@@ -8,6 +8,11 @@
     overflow: hidden
     padding: 0 1em
 
+    @include media($medium-screen)
+      @include span-columns(6)
+      @include omega(2n)
+      text-align: center
+
     @for $i from 1 through length($item-colors)
       &:nth-child(#{$i})
         .item-icon
@@ -23,8 +28,15 @@
           &:hover
             background-color: darken($background-color, 10)
 
+          @include media($medium-screen)
+            margin-right: 0
+
     .item-link
       display: inline-block
       height: 4em
       h3
         font-size: 1.4em
+
+      @include media($medium-screen)
+        display: block
+        padding-top: 0.8em
