@@ -1,4 +1,6 @@
 .items
+  $item-colors: $alizarin, $carrot, $sun-flower, $emerland, $peter-river, $amethyst
+
   @include clearfix
 
   .item
@@ -6,15 +8,18 @@
     overflow: hidden
     padding: 0 1em
 
-    .item-icon
-      @include circle(2.8em, $light-gray)
-      display: inline-block
-      margin-right: 0.5em
-      text-align: center
-      i
-        color: white
-        font-size: 1.4em
-        line-height: 2em
+    @for $i from 1 through length($item-colors)
+      &:nth-child(#{$i})
+        .item-icon
+          $background-color: nth($item-colors, $i)
+          @include circle(2.8em, $background-color)
+          display: inline-block
+          margin-right: 0.5em
+          text-align: center
+          i
+            color: white
+            font-size: 1.4em
+            line-height: 2em
 
     .item-link
       display: inline-block
