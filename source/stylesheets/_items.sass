@@ -1,0 +1,23 @@
+.items
+  @include clearfix
+
+  .item
+    width: 100%
+    overflow: hidden
+    padding: 0 1em
+
+    .item-icon
+      @include circle(2.8em, $light-gray)
+      display: inline-block
+      margin-right: 0.5em
+      text-align: center
+      i
+        color: white
+        font-size: 1.4em
+        line-height: 2em
+
+    .item-link
+      display: inline-block
+      height: 4em
+      h3
+        font-size: 1.4em
