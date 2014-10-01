@@ -1,0 +1,10 @@
+@mixin circle($circle-diameter, $circle-color)
+  $radius: 0.5 * $circle-diameter
+
+  width: $circle-diameter
+  height: $circle-diameter
+  background: $circle-color
+  @include border-top-radius($radius)
+  @include border-bottom-radius($radius)
+  @include border-left-radius($radius)
+  @include border-right-radius($radius)
