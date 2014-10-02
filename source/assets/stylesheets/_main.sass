@@ -1,2 +1,17 @@
 main
   @include outer-container
+
+  h2
+    text-align: center
+    color: lighten($base-font-color, 20)
+    font:
+      size: 1.3em
+      weight: 300
+    line-height: 1.4em
+    margin: 0 auto 1em
+    padding: 0.5em
+
+    @include media($large-screen)
+      font-size: 1.7em
+      line-height: 1.35em
+      margin: 0 auto 1em
