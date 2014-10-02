@@ -57,8 +57,8 @@ set :fonts_dir, 'assets/fonts'
 activate :google_analytics do |ga|
   ga.tracking_id = 'UA-26765451-1'
   ga.domain_name = 'gulamali.net'
-  ga.development = true
-  ga.minify = false
+  ga.development = false
+  ga.minify = true
 end
 
 # Build-specific configuration
