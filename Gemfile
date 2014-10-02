@@ -7,6 +7,7 @@ gem "middleman", "~>3.3.6"
 
 gem "bitters"
 gem "bourbon"
+gem "jquery-middleman"
 gem "middleman-google-analytics"
 gem "neat"
 gem "rake"
