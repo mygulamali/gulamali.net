@@ -1,3 +1,5 @@
+@site_title = 'Murtaza Gulamali'
+
 ###
 # Compass
 ###
@@ -41,11 +43,11 @@
 # end
 
 # Methods defined in the helpers block are available in templates
-# helpers do
-#   def some_helper
-#     "Helping"
-#   end
-# end
+helpers do
+  def home_page_link
+    (current_page.url == '/') ? @site_title : link_to(@site_title, '/')
+  end
+end
 
 set :css_dir, 'assets/stylesheets'
 set :js_dir, 'assets/javascripts'
