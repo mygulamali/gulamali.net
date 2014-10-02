@@ -48,12 +48,16 @@
 # end
 
 set :css_dir, 'assets/stylesheets'
-
 set :js_dir, 'assets/javascripts'
-
 set :images_dir, 'assets/images'
-
 set :fonts_dir, 'assets/fonts'
+
+activate :google_analytics do |ga|
+  ga.tracking_id = 'UA-26765451-1'
+  ga.domain_name = 'gulamali.net'
+  ga.development = true
+  ga.minify = false
+end
 
 # Build-specific configuration
 configure :build do
