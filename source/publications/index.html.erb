@@ -1,4 +1,19 @@
 ---
 title: Publications
+publications:
+  - 2011-geophysics
+  - 2010-spe-journal
+  - 2004-climate-dynamics
+  - 2004-ahm
+  - 2003-ahm
+  - 2002-phd-thesis
+  - 2002-grid
+  - 2001-jgr
 ---
 <h2>Publications</h2>
+
+<ul>
+  <% current_page.data.publications.each do |publication| %>
+    <li><%= partial "citations/#{publication}" %></li>
+  <% end %>
+</ul>
