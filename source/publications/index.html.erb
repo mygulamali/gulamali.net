@@ -14,6 +14,14 @@ publications:
 
 <ul class="publication-items">
   <% current_page.data.publications.each do |publication| %>
-    <li class="publication-item"><%= partial "citations/#{publication}" %></li>
+    <li class="publication-item">
+      <%= partial "citations/#{publication}" %>
+      <div class=abstract>
+        <div class="abstract-toggle"><i class="icon-chevron-right"></i> <span>Show</span> Abstract</div>
+        <div class="abstract-content">
+          <%= partial "abstracts/#{publication}" %>
+        </div>
+      </div>
+    </li>
   <% end %>
 </ul>
