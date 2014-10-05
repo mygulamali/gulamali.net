@@ -11,7 +11,9 @@ At: http://gulamali.net.
 git clone git@github.com:mygulamali/gulamali.net
 cd gulamali.net
 bundle install
-bundle exec rake init
+cd source/stylesheets
+bundle exec bourbon install
+bundle exec neat install
 ```
 
 ## Serve on your localhost
@@ -22,9 +24,9 @@ Then visit `http://localhost:4567` to see the site in action.
 
 ## Deploy to Dreamhost account
 
-`bundle exec rake deploy`
+`bundle exec middleman deploy`
 
-NB. your public SSH key for your localhost has to be in the
+NB. your public SSH key for your localhost must be in the
 `~/.ssh/authorized_keys2` file of your Dreamhost account for deployment to
 work correctly.
 
