@@ -67,8 +67,7 @@ end
 activate :deploy do |deploy|
   deploy.method = :rsync
   deploy.host = 'gulamali.net'
-  deploy.path = '/home/mygulamali/gulamali.net'
-  deploy.user = 'mygulamali'
+  deploy.path = '/home/public'
   deploy.clean = true
   deploy.build_before = true
 end
