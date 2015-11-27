@@ -1,8 +1,8 @@
 @site_title = 'Murtaza Gulamali'
 
-# configure :development do
-#   activate :livereload
-# end
+configure :development do
+  activate :livereload
+end
 
 helpers do
   def home_page_link
