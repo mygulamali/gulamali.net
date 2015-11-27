@@ -3,7 +3,7 @@
 source 'https://rubygems.org'
 
 ruby '2.2.3'
-gem "middleman", "~>3.3.6"
+gem "middleman", "~> 3.4.0"
 
 gem "bitters"
 gem "bourbon"
@@ -14,7 +14,7 @@ gem "neat"
 gem "rake"
 
 group :development do
-  gem "middleman-livereload", "~> 3.1.0"
+  gem "middleman-livereload", "~> 3.4.3"
 end
 
 platforms :mswin, :mingw do
