@@ -1,8 +1,6 @@
-<% time = File.mtime(Dir.glob("source/#{request.path}*")[0]) %>
 <footer>
   <div class="container">
-    &copy; <%= time.strftime("%Y") %>, Murtaza Gulamali. Some rights reserved.<br>
+    &copy; 2016, Murtaza Gulamali. Most rights reserved.<br>
     Made with <i class="icon-heart"></i> using <a title="Middleman" href="http://middlemanapp.com/">Middleman</a>.
-    Last modified: <time datetime="<%= time.utc.iso8601 %>"><%= time.strftime("Day %j of %YAD") %></time>.
   </div>
 </footer>
