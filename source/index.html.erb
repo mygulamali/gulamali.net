@@ -1,69 +1,43 @@
+---
+links:
+  - icon: signal
+    title: Curriculum Vitae
+    url: http://careers.stackoverflow.com/murtaza
+
+  - icon: book
+    title: Publications
+    url: /publications/
+
+  - icon: github
+    title: Code
+    url: https://github.com/mygulamali
+
+  - icon: twitter
+    title: Social Media
+    url: https://twitter.com/mygulamali
+
+  - icon: tumblr
+    title: Weblog
+    url: http://mygulamali.tumblr.com/
+
+  - icon: flickr
+    title: Photos
+    url: https://www.flickr.com/photos/mygulamali/
+---
 <h2>This is my website.  There are many like it, but this one is <strong>mine</strong>.</h2>
 
 <ul class="items">
-  <li class="item">
-    <% link_to 'http://careers.stackoverflow.com/murtaza', title: "Curriculum Vitae" do %>
-      <div class="item-icon">
-        <i class="icon-signal"></i>
-      </div>
-      <div class="item-link">
-        <h3>Curriculum Vitae</h3>
-      </div>
-    <% end %>
-  </li>
+  <% current_page.data.links.each do |link| %>
+    <li class="item">
+      <% link_to link.url, title: link.title do %>
+        <div class="item-icon">
+          <i class="icon-<%= link.icon %>"></i>
+        </div>
 
-  <li class="item">
-    <% link_to '/publications/', title: "Publications" do %>
-      <div class="item-icon">
-        <i class="icon-book"></i>
-      </div>
-      <div class="item-link">
-        <h3>Publications</h3>
-      </div>
-    <% end %>
-  </li>
-
-  <li class="item">
-    <% link_to 'https://github.com/mygulamali', title: "Code" do %>
-      <div class="item-icon">
-        <i class="icon-github"></i>
-      </div>
-      <div class="item-link">
-        <h3>Code</h3>
-      </div>
-    <% end %>
-  </li>
-
-  <li class="item">
-    <% link_to 'https://twitter.com/mygulamali', title: "Social Media" do %>
-      <div class="item-icon">
-        <i class="icon-twitter"></i>
-      </div>
-      <div class="item-link">
-        <h3>Social Media</h3>
-      </div>
-    <% end %>
-  </li>
-
-  <li class="item">
-    <% link_to 'http://mygulamali.tumblr.com/', title: "Weblog" do %>
-      <div class="item-icon">
-        <i class="icon-tumblr"></i>
-      </div>
-      <div class="item-link">
-        <h3>Weblog</h3>
-      </div>
-    <% end %>
-  </li>
-
-  <li class="item">
-    <% link_to 'https://www.flickr.com/photos/mygulamali/', title: "Photos" do %>
-      <div class="item-icon">
-        <i class="icon-flickr"></i>
-      </div>
-      <div class="item-link">
-        <h3>Photos</h3>
-      </div>
-    <% end %>
-  </li>
+        <div class="item-link">
+          <h3><%= link.title %></h3>
+        </div>
+      <% end %>
+    </li>
+  <% end %>
 </ul>
