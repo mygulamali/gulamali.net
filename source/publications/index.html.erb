@@ -11,6 +11,7 @@ publications:
   - 2002-grid
   - 2001-jgr
 ---
+
 <h2>Publications</h2>
 
 <ul class="publication-items">
@@ -18,7 +19,10 @@ publications:
     <li class="publication-item">
       <%= partial "citations/#{publication}" %>
       <div class=abstract>
-        <div class="abstract-toggle"><i class="icon-chevron-right"></i> <span>Show</span> Abstract</div>
+        <div class="abstract-toggle">
+          <i class="icon-circle-right"></i> <span>Show</span> Abstract
+        </div>
+
         <div class="abstract-content">
           <%= partial "abstracts/#{publication}" %>
         </div>

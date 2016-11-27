@@ -10,7 +10,7 @@ $(document).ready(function () {
   if ($('body.publications_index')) {
     $('.abstract-toggle').on('click', function (e) {
       $(this).parent().find('.abstract-content').slideToggle('fast');
-      $(this).find('i').toggleClass('icon-chevron-right icon-chevron-down');
+      $(this).find('i').toggleClass('icon-circle-right icon-circle-down');
       var action = $(this).find('span');
       action.text() === 'Show' ? action.text('Hide') : action.text('Show');
     });
