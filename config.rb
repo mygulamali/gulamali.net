@@ -26,7 +26,6 @@ ignore 'publications/citations/*'
 activate :google_analytics do |ga|
   ga.tracking_id = 'UA-26765451-1'
   ga.domain_name = 'gulamali.net'
-  ga.development = false
   ga.minify = true
 end
 
