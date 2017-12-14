@@ -30,7 +30,7 @@ activate :google_analytics do |ga|
 end
 
 activate :deploy do |deploy|
-  deploy.method = :rsync
+  deploy.deploy_method = :rsync
   deploy.host = 'gulamali.net'
   deploy.path = '/home/public'
   deploy.clean = true
