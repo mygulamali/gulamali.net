@@ -10,7 +10,6 @@ gem "bourbon"
 gem "middleman-autoprefixer", "~> 2.7"
 gem "middleman-deploy", "~> 2.0.0.alpha"
 gem "middleman-google-analytics"
-# gem "middleman-livereload", "~> 3.4.3"
 gem "neat"
 # gem "rake"
 

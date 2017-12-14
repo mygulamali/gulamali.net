@@ -1,9 +1,5 @@
 @site_title = 'Murtaza Gulamali'
 
-configure :development do
-  activate :livereload
-end
-
 helpers do
   def page_title
     return @site_title unless current_page.data.title
