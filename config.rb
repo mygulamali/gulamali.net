@@ -1,7 +1,9 @@
+activate :dotenv
+
 require "lib/custom_helpers"
 helpers CustomHelpers
 
-config[:site_title] = "Murtaza Gulamali"
+config[:site_title] = ENV["SITE_TITLE"]
 
 config[:css_dir] = "assets/stylesheets"
 config[:js_dir] = "assets/javascripts"
@@ -12,15 +14,15 @@ ignore "publications/abstracts/*"
 ignore "publications/citations/*"
 
 activate :google_analytics do |ga|
-  ga.tracking_id = "UA-26765451-1"
-  ga.domain_name = "gulamali.net"
+  ga.domain_name = ENV["GA_DOMAIN_NAME"]
+  ga.tracking_id = ENV["GA_TRACKING_ID"]
   ga.minify = true
 end
 
 activate :deploy do |deploy|
   deploy.deploy_method = :rsync
-  deploy.host = "gulamali.net"
-  deploy.path = "/home/public"
+  deploy.host = ENV["RSYNC_HOST"]
+  deploy.path = ENV["RSYNC_PATH"]
   deploy.clean = true
   deploy.build_before = true
 end

@@ -84,6 +84,9 @@ GEM
       middleman-core (>= 3.2)
       net-sftp
       ptools
+    middleman-dotenv (2.0.0)
+      dotenv (>= 2.0)
+      middleman-core (>= 4.0)
     middleman-google-analytics (3.0.0)
       activesupport (>= 4.1, < 5.1)
       erubis
@@ -129,6 +132,7 @@ DEPENDENCIES
   middleman (~> 4.2)
   middleman-autoprefixer (~> 2.7)
   middleman-deploy (~> 2.0.0.alpha)
+  middleman-dotenv (~> 2.0)
   middleman-google-analytics
   neat
   tzinfo-data
