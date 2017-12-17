@@ -2,8 +2,8 @@
 
 ## Synopsis
 
-Is my website, init!  You better check yourself before you wreck yourself.
-At: http://gulamali.net.
+Is my website, init! Check it out now (funk soul brother), at:
+https://gulamali.net
 
 ## Setup
 
@@ -11,24 +11,27 @@ At: http://gulamali.net.
 git clone git@github.com:mygulamali/gulamali.net
 cd gulamali.net
 bundle install
+cp .env.example .env
 cd source/stylesheets
 bundle exec bourbon install
 bundle exec neat install
 ```
 
+Then complete the variables in the `.env` file for your environment.
+
 ## Serve on your localhost
 
-`bundle exec middleman server`
+`bundle exec middleman`
 
 Then visit `http://localhost:4567` to see the site in action.
 
-## Deploy to Dreamhost account
+## Deploy to your webhost
 
 `bundle exec middleman deploy`
 
-NB. your public SSH key for your localhost must be in the
-`~/.ssh/authorized_keys2` file of your Dreamhost account for deployment to
-work correctly.
+Note: your public SSH key for your development machine must be in the
+`~/.ssh/authorized_keys` file on your webhost for deployment via rsync to appear
+seamless.
 
 ## License
 
