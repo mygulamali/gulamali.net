@@ -1,34 +1,26 @@
-@site_title = 'Murtaza Gulamali'
+require "lib/custom_helpers"
+helpers CustomHelpers
 
-helpers do
-  def page_title
-    return @site_title unless current_page.data.title
-    "#{current_page.data.title} < #{@site_title}"
-  end
+config[:site_title] = "Murtaza Gulamali"
 
-  def home_page_link
-    (current_page.url == '/') ? @site_title : link_to(@site_title, '/')
-  end
-end
+config[:css_dir] = "assets/stylesheets"
+config[:js_dir] = "assets/javascripts"
+config[:images_dir] = "assets/images"
+config[:fonts_dir] = "assets/fonts"
 
-set :css_dir, 'assets/stylesheets'
-set :js_dir, 'assets/javascripts'
-set :images_dir, 'assets/images'
-set :fonts_dir, 'assets/fonts'
-
-ignore 'publications/abstracts/*'
-ignore 'publications/citations/*'
+ignore "publications/abstracts/*"
+ignore "publications/citations/*"
 
 activate :google_analytics do |ga|
-  ga.tracking_id = 'UA-26765451-1'
-  ga.domain_name = 'gulamali.net'
+  ga.tracking_id = "UA-26765451-1"
+  ga.domain_name = "gulamali.net"
   ga.minify = true
 end
 
 activate :deploy do |deploy|
   deploy.deploy_method = :rsync
-  deploy.host = 'gulamali.net'
-  deploy.path = '/home/public'
+  deploy.host = "gulamali.net"
+  deploy.path = "/home/public"
   deploy.clean = true
   deploy.build_before = true
 end
