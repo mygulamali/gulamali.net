@@ -20,9 +20,6 @@
 # Ignore .env file
 .env
 
-# Ignore the build directory
-/build
-
 # Ignore tmp directory
 /tmp
 
