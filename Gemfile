@@ -6,7 +6,6 @@ gem "middleman", "~> 4.2"
 
 gem "bitters"
 gem "bourbon"
-# gem "jquery-middleman"
 gem "middleman-autoprefixer", "~> 2.7"
 gem "middleman-deploy", "~> 2.0.0.alpha"
 gem "middleman-dotenv", "~> 2.0"
