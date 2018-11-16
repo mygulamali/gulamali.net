@@ -29,9 +29,8 @@ Then visit `http://localhost:4567` to see the site in action.
 
 `bundle exec middleman deploy`
 
-Note: your public SSH key for your development machine must be in the
-`~/.ssh/authorized_keys` file on your webhost for deployment via rsync to appear
-seamless.
+This command will automagically commit the built website to the correct branch
+of this repo for GitHub pages to serve.
 
 ## Creating the favicon
 

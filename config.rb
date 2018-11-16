@@ -21,12 +21,7 @@ activate :google_analytics do |ga|
 end
 
 activate :deploy do |deploy|
-  deploy.deploy_method = :rsync
-  deploy.user = ENV["RSYNC_USER"]
-  deploy.host = ENV["RSYNC_HOST"]
-  deploy.port = ENV["RSYNC_PORT"]
-  deploy.path = ENV["RSYNC_PATH"]
-
+  deploy.deploy_method = :git
   deploy.clean = true
   deploy.build_before = true
 end
