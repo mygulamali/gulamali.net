@@ -25,27 +25,30 @@ Then complete the variables in the `.env` file for your environment.
 
 Then visit `http://localhost:4567` to see the site in action.
 
-## Deploy to your webhost
+## Deploy to your web server
 
 `bundle exec middleman deploy`
 
 This command will automagically commit the built website to the correct branch
-of this repo for GitHub pages to serve.
+of this repo for your static site server (i.e. [GitHub Pages] or [Netlify])
+to serve.
 
 ## Creating the favicon
 
-An SVG version of the favicon was created using [Inkscape][inkscape]. This was
-saved in the `source/assets/favicon` directory together with PNG versions of the
-favicon at different sizes. This was converted into the `source/favicon.ico`
-file using [Image Magick][convert], as follows:
+An SVG version of the favicon was created using [Inkscape]. This was saved in
+the `source/assets/favicon` directory together with PNG versions of the favicon
+at different sizes. This was converted into the `source/favicon.ico` file using
+[Image Magick], as follows:
 
 `convert favicon-16.png favicon-32.png favicon-48.png favicon.ico`
 
 ## License
 
 This software is released under the terms and conditions of
-[The MIT License][mit]. Please see the LICENSE.txt file for more details.
+[The MIT License]. Please see the LICENSE.txt file for more details.
 
-[convert]: https://www.imagemagick.org/ "Image Magick"
-[inkscape]: https://inkscape.org/en/ "Inkscape"
-[mit]: http://www.opensource.org/licenses/mit-license.php "The MIT License"
+[GitHub Pages]: https://pages.github.com/ "GitHub Pages"
+[Image Magick]: https://www.imagemagick.org/ "Image Magick"
+[Inkscape]: https://inkscape.org/en/ "Inkscape"
+[Netlify]: https://www.netlify.com/ "Netlify"
+[The MIT License]: http://www.opensource.org/licenses/mit-license.php "The MIT License"
