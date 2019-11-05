@@ -14,6 +14,7 @@
     "url": "git+https://github.com/mygulamali/gulamali.net.git"
   },
   "devDependencies": {
+    "clean-webpack-plugin": "^3.0.0",
     "webpack": "^4.41.2",
     "webpack-cli": "^3.3.10"
   }
