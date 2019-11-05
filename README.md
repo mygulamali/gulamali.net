@@ -10,14 +10,16 @@ https://gulamali.net
 ```shell
 git clone git@github.com:mygulamali/gulamali.net
 cd gulamali.net
-bundle install
 cp .env.example .env
-cd source/stylesheets
-bundle exec bourbon install
-bundle exec neat install
 ```
 
 Then complete the variables in the `.env` file for your environment.
+
+Next, run the setup script,
+
+```shell
+bin/setup
+```
 
 ## Serve on your localhost
 
