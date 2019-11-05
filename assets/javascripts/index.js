@@ -1,3 +1,5 @@
+const $ = require('jquery');
+
 // make footer sticky if window is too tall for content
 function stickFooterAtBottom() {
   var $footer = $('footer');
