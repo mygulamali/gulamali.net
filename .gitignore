@@ -26,3 +26,6 @@
 # Ignore vendor style files
 /source/assets/stylesheets/bourbon
 /source/assets/stylesheets/neat
+
+# Ignore node modules
+/node_modules

@@ -1,0 +1,20 @@
+{
+  "name": "gulamali.net",
+  "version": "1.0.0",
+  "private": true,
+  "author": "Murtaza Gulamali",
+  "description": "Is my website, init!",
+  "homepage": "https://www.gulamali.net",
+  "license": "MIT",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mygulamali/gulamali.net.git"
+  },
+  "devDependencies": {
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
+  }
+}
