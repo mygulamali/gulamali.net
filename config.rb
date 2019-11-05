@@ -14,6 +14,14 @@ ignore "assets/favicon/*"
 ignore "publications/abstracts/*"
 ignore "publications/citations/*"
 
+activate :external_pipeline,
+  name: :webpack,
+  command: build? ?
+    "npx webpack --bail -p" :
+    "npx webpack --watch -d --progress --color",
+  source: "tmp/webpack",
+  latency: 1
+
 activate :google_analytics do |ga|
   ga.domain_name = ENV["GA_DOMAIN_NAME"]
   ga.tracking_id = ENV["GA_TRACKING_ID"]
