@@ -1,3 +1,5 @@
+require('../stylesheets/all.scss');
+
 const $ = require('jquery');
 
 // make footer sticky if window is too tall for content

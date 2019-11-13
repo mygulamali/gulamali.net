@@ -24,8 +24,8 @@
 /tmp
 
 # Ignore vendor style files
-/source/assets/stylesheets/bourbon
-/source/assets/stylesheets/neat
+/assets/stylesheets/bourbon
+/assets/stylesheets/neat
 
 # Ignore node modules
 /node_modules
