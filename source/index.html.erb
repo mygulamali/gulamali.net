@@ -31,7 +31,7 @@ links:
     Murtaza Gulamali
   </h1>
 
-  <h2 class="subtitle is-size-3">
+  <h2 class="subtitle is-size-3 has-text-grey">
     This is my website.
     There are many like it, but this one is <strong>mine</strong>.
   </h2>
@@ -41,7 +41,7 @@ links:
   <div class="columns is-multiline has-circled-icons">
     <% current_page.data.links.each do |link| %>
       <div class="column is-one-third has-text-centered has-text-left-mobile">
-        <div class="is-inline-mobile is-size-2">
+        <div class="is-inline-mobile is-size-1 is-size-4-mobile">
           <% link_to link.url, title: link.title do %>
             <span class="icon has-circled-icon">
               <i class="icon-<%= link.icon %>"></i>
