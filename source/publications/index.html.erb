@@ -12,20 +12,22 @@ publications:
   - 2001-jgr
 ---
 
-<h2>Publications</h2>
+<h1 class="title is-2">Publications</h1>
 
-<ul class="publication-items">
+<ul>
   <% current_page.data.publications.each do |publication| %>
-    <li class="publication-item">
+    <li class="content">
       <%= partial "citations/#{publication}" %>
-      <div class=abstract>
-        <div class="abstract-toggle">
-          <i class="icon-chevron-down"></i> <span>Show</span> Abstract
-        </div>
 
-        <div class="abstract-content">
-          <%= partial "abstracts/#{publication}" %>
-        </div>
+      <button class="button is-block is-link is-outlined is-small">
+        <span class="icon">
+          <i class="icon-chevron-down"></i>
+        </span>
+        <span>Abstract</span>
+      </button>
+
+      <div class="abstract">
+        <%= partial "abstracts/#{publication}" %>
       </div>
     </li>
   <% end %>
