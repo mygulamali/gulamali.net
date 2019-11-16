@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+  <%= partial "partials/head" %>
+
+  <body class="<%= page_classes %>">
+    <section class="hero is-fullheight">
+      <div class="hero-body">
+        <div class="container">
+          <main role="main">
+            <%= yield %>
+          </main>
+        </div>
+      </div>
+
+      <div class="hero-foot">
+        <%= partial "partials/footer" %>
+      </div>
+    </section>
+
+    <%= javascript_include_tag "all" %>
+    <%= google_analytics_tag %>
+  </body>
+</html>

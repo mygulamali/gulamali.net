@@ -1,4 +1,5 @@
 ---
+layout: home
 links:
   - icon: book
     title: Publications
@@ -24,20 +25,33 @@ links:
     title: Curriculum Vitae
     url: https://uk.linkedin.com/in/mygulamali
 ---
-<h2>This is my website.  There are many like it, but this one is <strong>mine</strong>.</h2>
 
-<ul class="items">
-  <% current_page.data.links.each do |link| %>
-    <li class="item">
-      <% link_to link.url, title: link.title do %>
-        <div class="item-icon">
-          <i class="icon-<%= link.icon %>"></i>
-        </div>
+<section class="section has-text-centered">
+  <h1 class="title is-size-1">
+    Murtaza Gulamali
+  </h1>
 
-        <div class="item-link">
-          <h3><%= link.title %></h3>
+  <h2 class="subtitle is-size-3">
+    This is my website.
+    There are many like it, but this one is <strong>mine</strong>.
+  </h2>
+</section>
+
+<section class="section">
+  <div class="columns is-multiline has-circled-icons">
+    <% current_page.data.links.each do |link| %>
+      <div class="column is-one-third has-text-centered has-text-left-mobile">
+        <div class="is-inline-mobile is-size-2">
+          <% link_to link.url, title: link.title do %>
+            <span class="icon has-circled-icon">
+              <i class="icon-<%= link.icon %>"></i>
+            </span>
+          <% end %>
         </div>
-      <% end %>
-    </li>
-  <% end %>
-</ul>
+        <div class="is-inline-mobile is-size-4">
+          <%= link_to link.title, link.url, title: link.title %>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</section>

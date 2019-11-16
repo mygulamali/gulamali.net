@@ -1,13 +1,10 @@
 @charset "utf-8";
 
-@import "bourbon/bourbon";
-@import "base/base";
-@import "neat/neat";
-
+@import "colors";
 @import "mixins";
-@import "header";
-@import "main";
-@import "footer";
+
+$footer-padding: 2rem 1.5rem;
+
+@import "~bulma/bulma";
 
 @import "homepage";
-@import "publications";

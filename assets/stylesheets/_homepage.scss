@@ -1,0 +1,32 @@
+.columns.has-circled-icons {
+  $background-colors: $alizarin,
+                      $carrot,
+                      $sun-flower,
+                      $emerland,
+                      $peter-river,
+                      $amethyst;
+  $circle-diameter: 4rem;
+
+  .column {
+    @for $i from 1 through length($background-colors) {
+      &:nth-child(#{$i}) {
+        .has-circled-icon {
+          $background-color: nth($background-colors, $i);
+          @include circle($circle-diameter, $background-color);
+
+          i {
+            color: $white;
+          }
+
+          &:hover {
+            background-color: $grey-light;
+
+            i {
+              color: $white-ter;
+            }
+          }
+        }
+      }
+    }
+  }
+}
