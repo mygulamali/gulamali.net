@@ -2,11 +2,5 @@
 
 set -e
 
-STYLESHEET_DIR=source/assets/stylesheets
-
 bundle install
 npm install
-
-cd "$STYLESHEET_DIR"
-bundle exec bourbon install
-bundle exec neat install

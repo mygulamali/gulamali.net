@@ -23,7 +23,7 @@ bin/setup
 
 ## Serve on your localhost
 
-`bundle exec middleman`
+`bundle exec middleman serve`
 
 Then visit `http://localhost:4567` to see the site in action.
 
