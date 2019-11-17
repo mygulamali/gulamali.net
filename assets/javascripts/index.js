@@ -1,15 +1,15 @@
 require('../stylesheets/all.scss');
 
-const $ = require('jquery');
+function ready(fn) {
+  if (document.readyState != 'loading') {
+    fn();
+  } else {
+    document.addEventListener('DOMContentLoaded', fn);
+  }
+};
 
-$(document).ready(function () {
-  if ($('body.publications')) {
-    function toggleAbstract(event) {
-      const $button = $(event.currentTarget);
-      $button.next('.abstract').toggle();
-      $button.find('i').toggleClass('icon-chevron-up icon-chevron-down');
-    }
-
-    $('button').on('click', toggleAbstract);
+ready(function () {
+  if (document.body.classList.contains('publications')) {
+    require('./publications');
   }
 });
