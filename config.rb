@@ -10,7 +10,6 @@ config[:js_dir] = "assets/javascripts"
 config[:images_dir] = "assets/images"
 config[:fonts_dir] = "assets/fonts"
 
-ignore "assets/favicon/*"
 ignore "publications/abstracts/*"
 ignore "publications/citations/*"
 

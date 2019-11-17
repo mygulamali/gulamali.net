@@ -38,8 +38,8 @@ to serve.
 ## Creating the favicon
 
 An SVG version of the favicon was created using [Inkscape]. This was saved in
-the `source/assets/favicon` directory together with PNG versions of the favicon
-at different sizes. This was converted into the `source/favicon.ico` file using
+the `./assets/favicon` directory together with PNG versions of the favicon at
+different sizes. This was converted into the `./source/favicon.ico` file using
 [Image Magick], as follows:
 
 `convert favicon-16.png favicon-32.png favicon-48.png favicon.ico`
