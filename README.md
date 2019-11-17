@@ -3,7 +3,7 @@
 ## Synopsis
 
 Is my website, init! Check it out now (funk soul brother), at:
-https://gulamali.net
+https://www.gulamali.net
 
 ## Setup
 
@@ -37,10 +37,12 @@ to serve.
 
 ## Creating the favicon
 
-An SVG version of the favicon was created using [Inkscape]. This was saved in
-the `./assets/favicon` directory together with PNG versions of the favicon at
-different sizes. This was converted into the `./source/favicon.ico` file using
-[Image Magick], as follows:
+The source files for the favicon (`./source/favicon.ico`) can be found in the
+`./assets/favicon` directory.
+
+The favicon can be created as an SVG using [Inkscape]. This must be exported as
+a number of PNG files at different sizes. These can then be converted into an
+ICO file using [Image Magick]:
 
 `convert favicon-16.png favicon-32.png favicon-48.png favicon.ico`
 
