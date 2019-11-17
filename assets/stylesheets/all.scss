@@ -3,9 +3,11 @@
 @import "colors";
 @import "mixins";
 
+$footer-background-color: none;
 $footer-padding: 2rem 1.5rem;
 
 @import "~bulma/bulma";
 
+@import "header";
 @import "homepage";
 @import "publications";
