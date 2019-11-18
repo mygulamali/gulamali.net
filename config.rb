@@ -13,6 +13,12 @@ config[:fonts_dir] = "assets/fonts"
 ignore "publications/abstracts/*"
 ignore "publications/citations/*"
 
+activate :blog do |blog|
+  blog.layout = "layouts/publications"
+  blog.permalink = "{year}/{title}.html"
+  blog.prefix = "publications"
+end
+
 activate :external_pipeline,
   name: :webpack,
   command: build? ?

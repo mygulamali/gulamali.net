@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+  <%= partial "partials/head" %>
+
+  <body class="<%= page_classes %>">
+    <%= partial "partials/header" %>
+
+    <div class="container">
+      <main role="main">
+        <h1 class="title is-1 is-family-serif has-text-centered">
+          <%= link_to "Publications", "/publications/" %>
+        </h1>
+
+        <article>
+          <h2 class="title">
+            <%= current_article.title %>
+          </h2>
+
+          <%= yield %>
+        </article>
+      </main>
+    </div>
+
+    <%= partial "partials/footer" %>
+
+    <%= javascript_include_tag "all" %>
+    <%= google_analytics_tag %>
+  </body>
+</html>
