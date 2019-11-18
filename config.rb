@@ -27,12 +27,6 @@ activate :google_analytics do |ga|
   ga.minify = true
 end
 
-activate :deploy do |deploy|
-  deploy.deploy_method = :git
-  deploy.clean = true
-  deploy.build_before = true
-end
-
 configure :build do
   activate :minify_css
   activate :minify_javascript

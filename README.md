@@ -29,11 +29,8 @@ Then visit `http://localhost:4567` to see the site in action.
 
 ## Deploy to your web server
 
-`bundle exec middleman deploy`
-
-This command will automagically commit the built website to the correct branch
-of this repo for your static site server (i.e. [GitHub Pages] or [Netlify])
-to serve.
+Committing to the `master` branch of this project on GitHub will automatically
+build and deploy the website to [Netlify].
 
 ## Creating the favicon
 
@@ -51,7 +48,6 @@ ICO file using [Image Magick]:
 This software is released under the terms and conditions of
 [The MIT License]. Please see the LICENSE.txt file for more details.
 
-[GitHub Pages]: https://pages.github.com/ "GitHub Pages"
 [Image Magick]: https://www.imagemagick.org/ "Image Magick"
 [Inkscape]: https://inkscape.org/en/ "Inkscape"
 [Netlify]: https://www.netlify.com/ "Netlify"
