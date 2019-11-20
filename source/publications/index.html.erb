@@ -1,38 +1,16 @@
 ---
 title: Publications
-publications:
 ---
 
-<h1 class="title is-1 is-family-serif has-text-centered">
-  Publications
-</h1>
-
-<ul>
-  <% current_page.data.publications.each do |publication| %>
-    <li class="content">
-      <%= partial "citations/#{publication}" %>
-
-      <div class="is-hidden-mobile">
-        <button class="button is-block is-link is-outlined is-small">
-          <span class="icon">
-            <i class="icon-chevron-down"></i>
-          </span>
-          <span>Abstract</span>
-        </button>
-
-        <div class="abstract is-family-serif">
-          <%= partial "abstracts/#{publication}" %>
-        </div>
-      </div>
-    </li>
-  <% end %>
-</ul>
-
-<ul>
+<table class="table is-size-5">
   <% page_articles.each_with_index do |article, i| %>
-    <li class="content is-size-5">
-      <span><%= article.date.strftime('%Y') %></span>
-      <%= link_to article.title, article %>
-    </li>
+    <tr>
+      <td>
+        <time datetime="<%= article.date.strftime('%Y-%m-%d') %>">
+          <%= article.date.strftime('%Y') %>
+        </time>
+      </td>
+      <td><%= link_to article.title, article %></td>
+    </tr>
   <% end %>
-</ul>
+</table>

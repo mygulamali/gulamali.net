@@ -8,29 +8,6 @@ body.publications {
     margin-top: $size-4;
   }
 
-  ul {
-    li {
-      border-bottom: 1px solid $grey-lighter;
-      padding: 0 $size-4 $size-4;
-
-      &:last-child {
-        border-bottom: none;
-        padding-bottom: none;
-      }
-
-      button {
-        margin-top: $size-6;
-      }
-
-      .abstract {
-        color: $grey;
-        display: none;
-        margin-top: $size-6;
-        text-align: justify;
-      }
-    }
-  }
-
   article {
     padding: 0 $size-4;
     text-align: justify;
