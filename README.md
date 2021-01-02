@@ -2,8 +2,7 @@
 
 ## Synopsis
 
-Is my website, init! Check it out now (funk soul brother), at:
-https://www.gulamali.net
+Is my website, init! https://www.gulamali.net
 
 ## Setup
 
@@ -13,7 +12,9 @@ cd gulamali.net
 cp .env.example .env
 ```
 
-Then complete the variables in the `.env` file for your environment.
+Then complete the variables in the `.env` file for your environment. The current
+values can be found in the _Build & deploy_ section under the _Site settings_
+tab for the website, on Netlify.
 
 Next, run the setup script,
 
