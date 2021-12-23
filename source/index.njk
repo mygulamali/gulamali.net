@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: layouts/home
 links:
   - icon: book
     title: Publications
@@ -35,19 +35,19 @@ links:
 
 <section class="section">
   <div class="columns is-multiline has-circled-icons">
-    <% current_page.data.links.each do |link| %>
-      <div class="column has-text-centered has-text-left-mobile">
-        <div class="is-inline-mobile is-size-1 is-size-4-mobile">
-          <% link_to link.url, title: link.title do %>
-            <span class="icon has-circled-icon">
-              <i class="icon-<%= link.icon %>"></i>
-            </span>
-          <% end %>
-        </div>
-        <div class="is-inline-mobile is-size-4">
-          <%= link_to link.title, link.url, title: link.title %>
-        </div>
+    {% for link in links %}
+    <div class="column has-text-centered has-text-left-mobile">
+      <div class="is-inline-mobile is-size-1 is-size-4-mobile">
+        <a href="{{ link.url }}" title="{{ link.title }}">
+          <span class="icon has-circled-icon">
+            <i class="icon-{{ link.icon }}"></i>
+          </span>
+        </a>
       </div>
-    <% end %>
+      <div class="is-inline-mobile is-size-4">
+        <a href="{{ link.url }}" title="{{ link.title }}">{{ link.title }}</a>
+      </div>
+    </div>
+    {% endfor %}
   </div>
 </section>

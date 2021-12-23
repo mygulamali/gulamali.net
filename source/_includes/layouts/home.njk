@@ -1,23 +1,23 @@
 <!doctype html>
 <html>
-  <%= partial "partials/head" %>
+  {% include "../partials/head.njk" %}
 
-  <body class="<%= page_classes %>">
+  <body>
     <section class="hero is-fullheight">
       <div class="hero-body">
         <div class="container">
           <main role="main">
-            <%= yield %>
+            {{ content | safe }}
           </main>
         </div>
       </div>
 
       <div class="hero-foot">
-        <%= partial "partials/footer" %>
+        {% include "../partials/footer.njk" %}
       </div>
     </section>
 
-    <%= javascript_include_tag "all" %>
-    <%= google_analytics_tag %>
+    {# <%= javascript_include_tag "all" %> #}
+    {# <%= google_analytics_tag %> #}
   </body>
 </html>
