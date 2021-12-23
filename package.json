@@ -16,6 +16,7 @@
   },
   "devDependencies": {
     "@11ty/eleventy": "^0.12.1",
-    "bulma": "^0.9.3"
+    "bulma": "^0.9.3",
+    "sass": "^1.45.1"
   }
 }
