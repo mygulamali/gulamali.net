@@ -7,6 +7,9 @@ const pageTitle = title => {
   return siteTitle;
 };
 
+const year = value => value.getFullYear();
+const iso = value => value.toISOString();
+
 module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("source/assets/fonts");
   eleventyConfig.addPassthroughCopy("source/favicon.ico");
@@ -14,6 +17,8 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("source/robots.txt");
   eleventyConfig.addWatchTarget("source/assets/stylesheets/");
   eleventyConfig.addShortcode("pageTitle", pageTitle);
+  eleventyConfig.addFilter("year", year);
+  eleventyConfig.addFilter("iso", iso);
 
   return {
     dir: {
