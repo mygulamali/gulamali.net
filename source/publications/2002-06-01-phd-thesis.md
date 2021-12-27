@@ -1,6 +1,7 @@
 ---
-title: Spacecraft observations of magnetohydrodynamic turbulence in corotating interaction regions
 date: 2002-06-01
+tags: publications
+title: Spacecraft observations of magnetohydrodynamic turbulence in corotating interaction regions
 ---
 
 Gulamali, M. Y. (2002) Spacecraft observations of magnetohydrodynamic turbulence

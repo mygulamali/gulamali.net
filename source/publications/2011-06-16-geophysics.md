@@ -1,6 +1,7 @@
 ---
-title: Self-potential anomalies induced by water injection into hydrocarbon reservoirs
 date: 2011-06-16
+tags: publications
+title: Self-potential anomalies induced by water injection into hydrocarbon reservoirs
 ---
 
 Gulamali, M. Y., E. Leinov and M. D. Jackson (2011), Self-potential anomalies

@@ -1,6 +1,7 @@
 ---
-title: Bistability of the thermohaline circulation identified through comprehensive 2-parameter sweeps of an efficient climate model
 date: 2004-11-09
+tags: publications
+title: Bistability of the thermohaline circulation identified through comprehensive 2-parameter sweeps of an efficient climate model
 ---
 
 Marsh, R., A. Yool, T. M. Lenton, M. Y. Gulamali, N. R. Edwards, J. G. Shepherd,

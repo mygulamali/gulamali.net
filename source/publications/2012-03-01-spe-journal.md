@@ -1,6 +1,7 @@
 ---
-title: "Spontaneous potentials in hydrocarbon reservoirs during waterflooding: Application to water-front monitoring"
 date: 2012-03-01
+tags: publications
+title: "Spontaneous potentials in hydrocarbon reservoirs during waterflooding: Application to water-front monitoring"
 ---
 
 Jackson, M. D., M. Y. Gulamali, E. Leinov, J. H. Saunders, and J. Vinogradov

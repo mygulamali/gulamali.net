@@ -1,6 +1,7 @@
 ---
-title: Real-Time measurements of spontaneous potential for inflow monitoring in intelligent wells
 date: 2010-09-19
+tags: publications
+title: Real-Time measurements of spontaneous potential for inflow monitoring in intelligent wells
 ---
 
 Jackson, M. D., M. Y. Gulamali, E. Leinov, J. H. Saunders and J. Vinogradov

@@ -1,29 +1,29 @@
 <!doctype html>
 <html>
-  <%= partial "partials/head" %>
+  {% include "../partials/head.njk" %}
 
-  <body class="<%= page_classes %>">
-    <%= partial "partials/header" %>
+  <body class="publications">
+    {% include "../partials/header.njk" %}
 
     <div class="container">
       <main role="main">
         <h1 class="title is-1 is-family-serif has-text-centered">
-          <%= link_to "Publications", "/publications/" %>
+          <a href="/publications/" title="Publications">Publications</a>
         </h1>
 
         <article>
           <h2 class="title">
-            <%= current_article.title %>
+            {{ title }}
           </h2>
 
-          <%= yield %>
+          {{ content | safe }}
         </article>
       </main>
     </div>
 
-    <%= partial "partials/footer" %>
+    {% include "../partials/footer.njk" %}
 
-    <%= javascript_include_tag "all" %>
-    <%= google_analytics_tag %>
+    {# <%= javascript_include_tag "all" %> #}
+    {# <%= google_analytics_tag %> #}
   </body>
 </html>
