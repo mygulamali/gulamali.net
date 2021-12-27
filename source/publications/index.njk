@@ -3,14 +3,18 @@ title: Publications
 ---
 
 <table class="table is-size-5">
-  <% page_articles.each_with_index do |article, i| %>
-    <tr>
-      <td>
-        <time datetime="<%= article.date.strftime('%Y-%m-%d') %>">
-          <%= article.date.strftime('%Y') %>
-        </time>
-      </td>
-      <td><%= link_to article.title, article %></td>
-    </tr>
-  <% end %>
+{% for publication in collections.publications %}
+  <tr>
+    <td>
+      <time datetime="{{ publication.data.date | iso }}">
+        {{ publication.data.date | year }}
+      </time>
+    </td>
+    <td>
+      <a href="{{ publication.url }}" title="{{ publication.data.title }}">
+        {{ publication.data.title }}
+      </a>
+    </td>
+  </tr>
+{% endfor %}
 </table>
