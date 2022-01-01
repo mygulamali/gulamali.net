@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+  {% include "../partials/head.njk" %}
+
+  <body class="{{ page.fileSlug }}">
+    {% include "../partials/header.njk" %}
+
+    <div class="container">
+      <h1 class="title is-1 is-family-serif has-text-centered">
+        {{ title }}
+      </h1>
+
+      <main role="main">
+        {{ content | safe }}
+      </main>
+    </div>
+
+    {% include "../partials/footer.njk" %}
+
+    {# <%= javascript_include_tag "all" %> #}
+    {# <%= google_analytics_tag %> #}
+  </body>
+</html>

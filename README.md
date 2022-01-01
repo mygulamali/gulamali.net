@@ -16,27 +16,27 @@ Then complete the variables in the `.env` file for your environment. The current
 values can be found in the _Build & deploy_ section under the _Site settings_
 tab for the website, on Netlify.
 
-Next, run the setup script,
+Next, install the Node modules,
 
 ```shell
-bin/setup
+npm install
 ```
 
 ## Serve on your localhost
 
-`bundle exec middleman serve`
+`npm run serve`
 
-Then visit `http://localhost:4567` to see the site in action.
+Then visit `http://localhost:8080` to see the site in action.
 
 ## Deploy to your web server
 
-Committing to the `master` branch of this project on GitHub will automatically
+Committing to the `main` branch of this project on GitHub will automatically
 build and deploy the website to [Netlify].
 
 ## Creating the favicon
 
 The source files for the favicon (`./source/favicon.ico`) can be found in the
-`./assets/favicon` directory.
+`./source/assets/favicon` directory.
 
 The favicon can be created as an SVG using [Inkscape]. This must be exported as
 a number of PNG files at different sizes. These can then be converted into an

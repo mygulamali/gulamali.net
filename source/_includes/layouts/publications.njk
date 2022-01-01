@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+  {% include "../partials/head.njk" %}
+
+  <body class="publications">
+    {% include "../partials/header.njk" %}
+
+    <div class="container">
+      <main role="main">
+        <h1 class="title is-1 is-family-serif has-text-centered">
+          <a href="/publications/" title="Publications">Publications</a>
+        </h1>
+
+        <article>
+          <h2 class="title">
+            {{ title }}
+          </h2>
+
+          {{ content | safe }}
+        </article>
+      </main>
+    </div>
+
+    {% include "../partials/footer.njk" %}
+
+    {# <%= javascript_include_tag "all" %> #}
+    {# <%= google_analytics_tag %> #}
+  </body>
+</html>

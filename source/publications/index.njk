@@ -1,0 +1,20 @@
+---
+title: Publications
+---
+
+<table class="table is-size-5">
+{% for publication in collections.publications %}
+  <tr>
+    <td>
+      <time datetime="{{ publication.data.date | iso }}">
+        {{ publication.data.date | year }}
+      </time>
+    </td>
+    <td>
+      <a href="{{ publication.url }}" title="{{ publication.data.title }}">
+        {{ publication.data.title }}
+      </a>
+    </td>
+  </tr>
+{% endfor %}
+</table>
