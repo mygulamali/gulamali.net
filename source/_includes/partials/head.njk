@@ -14,6 +14,15 @@
   <meta http-equiv="cleartype" content="on">
   <link rel="stylesheet" href="/assets/main.css">
 
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id={{ gaTrackingId }}"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag("js", new Date());
+    gtag("config", "{{ gaTrackingId }}");
+  </script>
+
   <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
