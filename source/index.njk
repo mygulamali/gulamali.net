@@ -14,6 +14,15 @@ links:
     url: /publications/
 ---
 
+{% macro anchor(title, url) %}
+{% set re = r/^https:\/\// %}
+{% if re.test(url) %}
+  <a href="{{ url }}" title="{{ title }}" target="_blank">
+{% else %}
+  <a href="{{ url }}" title="{{ title }}">
+{% endif %}
+{% endmacro %}
+
 <section class="section has-text-centered">
   <h1 class="title is-1 is-family-serif">
     {{ siteTitle }}
@@ -30,14 +39,16 @@ links:
     {% for link in links %}
     <div class="column has-text-centered has-text-left-mobile">
       <div class="is-inline-mobile is-size-1 is-size-4-mobile">
-        <a href="{{ link.url }}" title="{{ link.title }}">
+        {{ anchor(link.title, link.url) }}
           <span class="icon has-circled-icon">
             <i class="icon-{{ link.icon }}"></i>
           </span>
         </a>
       </div>
       <div class="is-inline-mobile is-size-4">
-        <a href="{{ link.url }}" title="{{ link.title }}">{{ link.title }}</a>
+        {{ anchor(link.title, link.url) }}
+          {{ link.title }}
+        </a>
       </div>
     </div>
     {% endfor %}
