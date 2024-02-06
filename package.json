@@ -1,6 +1,6 @@
 {
   "name": "gulamali.net",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "private": true,
   "author": "Murtaza Gulamali",
   "description": "Is my website, init!",
@@ -17,7 +17,7 @@
   "devDependencies": {
     "@11ty/eleventy": "^2.0.0",
     "bulma": "^0.9.4",
-    "dotenv": "^16.0.3",
-    "sass": "^1.58.3"
+    "dotenv": "^16.4.1",
+    "sass": "^1.70.0"
   }
 }
