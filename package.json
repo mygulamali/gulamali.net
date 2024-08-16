@@ -15,7 +15,7 @@
     "url": "git+https://github.com/mygulamali/gulamali.net.git"
   },
   "devDependencies": {
-    "@11ty/eleventy": "^2.0.0",
+    "@11ty/eleventy": "^2.0.1",
     "bulma": "^0.9.4",
     "dotenv": "^16.4.1",
     "sass": "^1.70.0"
