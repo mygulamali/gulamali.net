@@ -1,5 +1,5 @@
 const path = require("path")
-const Sass = require("sass")
+const sass = require("sass")
 
 module.exports = class SassTemplate {
   data() {
@@ -7,10 +7,12 @@ module.exports = class SassTemplate {
   }
 
   render(data) {
-    return Sass.renderSync({
-      file: path.join(__dirname, "./main.scss"),
-      includePaths: [path.join(__dirname, "../../../node_modules")],
-      outputStyle: "compressed"
-    }).css
+    return sass.compile(
+      path.join(__dirname, "./main.scss"),
+      {
+        loadPaths: [path.join(__dirname, "../../../node_modules")],
+        style: "compressed"
+      }
+    ).css;
   }
 }
