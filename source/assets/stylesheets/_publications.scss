@@ -1,15 +1,18 @@
+@use 'bulma/sass/utilities/initial-variables' as b;
+@use 'bulma/sass/elements/title';
+
 body.publications {
   h1 {
-    margin-top: $size-4;
+    margin-top: b.$size-4;
   }
 
   h4 {
     @extend .subtitle;
-    margin-top: $size-4;
+    margin-top: b.$size-4;
   }
 
   article {
-    padding: 0 $size-4;
+    padding: 0 b.$size-4;
     text-align: justify;
 
     h2 {
