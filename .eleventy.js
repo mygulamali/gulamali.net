@@ -1,3 +1,5 @@
+const UpgradeHelper = require("@11ty/eleventy-upgrade-help");
+
 const pageTitle = title => {
   siteTitle = process.env.SITE_TITLE;
   if (title) {
@@ -19,6 +21,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addShortcode("pageTitle", pageTitle);
   eleventyConfig.addFilter("year", year);
   eleventyConfig.addFilter("iso", iso);
+  eleventyConfig.addPlugin(UpgradeHelper);
 
   return {
     dir: {
