@@ -1,16 +1,14 @@
-const pageTitle = title => {
-  siteTitle = process.env.SITE_TITLE;
-  if (title) {
-    return `${title} < ${siteTitle}`;
-  }
+import "dotenv/config";
 
-  return siteTitle;
+const pageTitle = title => {
+  const siteTitle = process.env.SITE_TITLE;
+  return title ? `${title} < ${siteTitle}` : siteTitle;
 };
 
 const year = value => value.getFullYear();
 const iso = value => value.toISOString();
 
-module.exports = function(eleventyConfig) {
+export default (eleventyConfig) => {
   eleventyConfig.addPassthroughCopy("source/assets/fonts");
   eleventyConfig.addPassthroughCopy("source/favicon.ico");
   eleventyConfig.addPassthroughCopy("source/mygulamali.asc");

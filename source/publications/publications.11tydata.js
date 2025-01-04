@@ -1,12 +1,6 @@
-const isIndex = data => (data.page.filePathStem === "/publications/index");
+const isIndex = data => data.page.filePathStem === "/publications/index";
 
-const layout = data => {
-  if (isIndex(data)) {
-    return data.layout;
-  }
-
-  return "layouts/publications.njk";
-};
+const layout = data => isIndex(data) ? data.layout : "layouts/publications.njk";
 
 const permalink = data => {
   if (isIndex(data)) {
@@ -19,6 +13,6 @@ const permalink = data => {
   return `publications/${year}/${slug}.html`
 };
 
-module.exports = {
+export default {
   eleventyComputed: {layout, permalink}
 };

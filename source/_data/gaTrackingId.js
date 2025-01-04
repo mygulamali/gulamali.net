@@ -1,8 +1,7 @@
-require("dotenv").config();
+import "dotenv/config";
 
-module.exports = () => {
-  if (process.env.ELEVENTY_ENV == "production") {
-    return process.env.GA_TRACKING_ID;
-  }
-  return "DUMMY_GA_TRACKING_ID";
-};
+export default () => (
+  process.env.ELEVENTY_ENV === "production"
+    ? process.env.GA_TRACKING_ID
+    : "DUMMY_GA_TRACKING_ID"
+);

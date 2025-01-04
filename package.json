@@ -6,6 +6,7 @@
   "description": "Is my website, init!",
   "homepage": "https://www.gulamali.net",
   "license": "MIT",
+  "type": "module",
   "scripts": {
     "build": "ELEVENTY_ENV=production eleventy",
     "serve": "ELEVENTY_ENV=development eleventy --serve"
