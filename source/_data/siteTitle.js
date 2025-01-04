@@ -1,3 +1,3 @@
-require("dotenv").config();
+import "dotenv/config";
 
-module.exports = () => process.env.SITE_TITLE;
+export default () => process.env.SITE_TITLE;

@@ -1,11 +1,12 @@
 {
   "name": "gulamali.net",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "private": true,
   "author": "Murtaza Gulamali",
   "description": "Is my website, init!",
   "homepage": "https://www.gulamali.net",
   "license": "MIT",
+  "type": "module",
   "scripts": {
     "build": "ELEVENTY_ENV=production eleventy",
     "serve": "ELEVENTY_ENV=development eleventy --serve"
@@ -15,9 +16,9 @@
     "url": "git+https://github.com/mygulamali/gulamali.net.git"
   },
   "devDependencies": {
-    "@11ty/eleventy": "^2.0.1",
-    "bulma": "^1.0.2",
-    "dotenv": "^16.4.5",
-    "sass": "^1.77.8"
+    "@11ty/eleventy": "^3.0.0",
+    "bulma": "^1.0.3",
+    "dotenv": "^16.4.7",
+    "sass": "^1.83.1"
   }
 }
