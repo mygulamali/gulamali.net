@@ -1,3 +1,4 @@
+@use 'sass:list';
 @use 'bulma/sass/utilities/initial-variables' as b;
 
 @use 'colors';
@@ -13,10 +14,10 @@ body.home {
                         colors.$amethyst;
 
     .column {
-      @for $i from 1 through length($background-colors) {
+      @for $i from 1 through list.length($background-colors) {
         &:nth-child(#{$i}) {
           .has-circled-icon {
-            $background-color: nth($background-colors, $i);
+            $background-color: list.nth($background-colors, $i);
             @include mixins.circle(2 * b.$size-1, $background-color);
 
             i {
